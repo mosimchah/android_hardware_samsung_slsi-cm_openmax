@@ -36,7 +36,7 @@ void _Exynos_OSAL_Log(EXYNOS_LOG_LEVEL logLevel, const char *tag, const char *ms
     va_start(argptr, msg);
 
     switch (logLevel) {
-    case EXYNOS_LOG_TRACE:
+/*    case EXYNOS_LOG_TRACE:
         __android_log_vprint(ANDROID_LOG_DEBUG, tag, msg, argptr);
         break;
     case EXYNOS_LOG_INFO:
@@ -49,7 +49,7 @@ void _Exynos_OSAL_Log(EXYNOS_LOG_LEVEL logLevel, const char *tag, const char *ms
         __android_log_vprint(ANDROID_LOG_ERROR, tag, msg, argptr);
         break;
     default:
-        __android_log_vprint(ANDROID_LOG_VERBOSE, tag, msg, argptr);
+        __android_log_vprint(ANDROID_LOG_VERBOSE, tag, msg, argptr); */
     }
 
     va_end(argptr);
